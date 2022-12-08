@@ -2,25 +2,24 @@ package org.zerock.controller;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.zerock.domain.SampleDTO;
 import org.zerock.domain.SampleDTOList;
 import org.zerock.domain.TodoDTO;
 
-import jdk.internal.org.jline.utils.Log;
-import lombok.extern.log4j.Log4j;
-
 @Controller
-@RequestMapping("/sample/*")
 //@Log4j
 public class SamPleController {
 	@InitBinder
@@ -42,7 +41,7 @@ public class SamPleController {
 		System.out.println(dto.getAge());
 		System.out.println(dto.getName());
 //		Log.info(""+dto);
-		return "ex01";
+		return "board/ex01";
 	}
 	@GetMapping("/ex02")
 	public String ex02(@RequestParam("name") String name, @RequestParam("age") int age) {
@@ -67,14 +66,30 @@ public class SamPleController {
 	}
 	
 	@GetMapping("/ex03")
-	public String ex03(TodoDTO todo) {
+	public String ex03_get(TodoDTO todo) {
 //		Log.info("todo : "+todo);
 		return "ex03";
 	}
+	
+	@PostMapping("/ex03")
+	public String ex03_post(TodoDTO todo) {
+//		Log.info("todo : "+todo);
+		return "ex03";
+	}
+	
 	@GetMapping("ex04")
 	public String ex04(SampleDTO dto, int page) {
 //		Log.info("dto : "+dto);
 //		Log.info("page : " + page);
 		return "/sample/ex04";
+	}
+	
+	@ResponseBody
+	@RequestMapping("test")
+	public String test(HttpServletRequest req) {
+		String value1 = req.getParameter("my");
+		String value2 = req.getParameter("p");
+		String value3 = req.getParameter("name");
+		return value1 + ", " + value2 + ", " + value3;
 	}
 }
