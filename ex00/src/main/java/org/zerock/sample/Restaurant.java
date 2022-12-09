@@ -1,6 +1,5 @@
-package org.zerock.controller;
+package org.zerock.sample;
 
-import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +9,7 @@ import lombok.Setter;
 @Component
 @Data
 public class Restaurant {
+	
 	@Setter
 	@Autowired
 	private Chef chef;

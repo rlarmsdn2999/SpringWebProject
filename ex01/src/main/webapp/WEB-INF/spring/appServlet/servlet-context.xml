@@ -20,5 +20,9 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-	<context:component-scan base-package="org.zerock"></context:component-scan>
+	
+	<context:component-scan base-package="org.zerock.controller" />
+	
+	
+	
 </beans:beans>
