@@ -44,4 +44,57 @@ public class BoardMapperTest {
 		
 		System.out.println(board);
 	}
+	
+	@Test
+	public void testRead() {
+		BoardVO board = mapper.read(4L);
+		
+		System.out.println(board);
+	}
+	
+	@Test
+	public void testDelete() {
+		System.out.println("DELETE COUNT : " + mapper.delete(3L));
+	}
+	
+	@Test
+	public void testUpdate() {
+		BoardVO board = new BoardVO();
+		board.setBno(2L);
+		board.setTitle("수정된 제목");
+		board.setContent("수정된 내용");
+		board.setWriter("user00");
+		
+		int count = mapper.update(board);
+		System.out.println("UPDATE COUNT = " + count);
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
