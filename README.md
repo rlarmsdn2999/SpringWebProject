@@ -62,3 +62,7 @@
 ##### 6.2.order by 보다는 인덱스
 ##### 6.3.인덱스를 이용하는 정렬
 ##### 6.4.ROWNUM과 인라인뷰
+
+### 07.Mybatis와 스프링에서 페이징 처리
+##### 7.1.Mybatis처리와 테스트
+##### 7.2.BoardController와 BoardServide수정
