@@ -8,8 +8,11 @@
 <div class="container-fluid">
 
 	<!-- Page Heading -->
-	<h1 class="h3 mb-2 text-gray-800">Board Register</h1>
-
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="h3 mb-2 text-gray-800">Board Register</h1>
+		</div>	
+	</div>
 	<!-- DataTales Example -->
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
@@ -39,5 +42,4 @@
 				</table>
 			</div>
 		</div>
-
 <%@include file="../includes/footer.jsp"%>

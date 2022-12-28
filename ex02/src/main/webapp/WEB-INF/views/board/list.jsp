@@ -62,8 +62,6 @@
 		</div>
 	</div>
 	<!-- /.container-fluid -->
-
-</div>
 <!-- End of Main Content -->
 <script type="text/javascript">
 $(document).ready(function(){

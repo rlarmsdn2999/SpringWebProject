@@ -20,7 +20,7 @@ public class BoardController {
 	
 	@GetMapping("/list")
 	public void list(Model model) {
-		System.out.println("list");
+		System.out.println("list : ");
 		model.addAttribute("list", service.getList());
 	}
 	@PostMapping("/register")
@@ -30,9 +30,9 @@ public class BoardController {
 		rttr.addFlashAttribute("result", board.getBno());
 		return "redirect:/board/list";
 	}
-	@GetMapping("/get")
+	@GetMapping({"/get","/modify"})
 	public void get(@RequestParam("bno") Long bno, Model model) {
-		System.out.println("/get");
+		System.out.println("/get or modify");
 		model.addAttribute("board",service.get(bno));
 	}
 	@PostMapping("/modify")

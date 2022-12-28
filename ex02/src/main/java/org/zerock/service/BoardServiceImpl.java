@@ -39,7 +39,7 @@ public class BoardServiceImpl implements BoardService{
 
 	@Override
 	public List<BoardVO> getList() {
-		System.out.println("getList......");
+		System.out.println("getListWithCriteria......" );
 		return mapper.getList();
 	}
 	
