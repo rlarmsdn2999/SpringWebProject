@@ -1,0 +1,6 @@
+var replyService = (function(){
+	function add(reply, callback) {
+		console.log("Reply");
+	}
+	return {add:add};
+})();

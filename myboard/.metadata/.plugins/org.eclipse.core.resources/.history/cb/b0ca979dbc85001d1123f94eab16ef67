@@ -1,0 +1,14 @@
+package org.zerock.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.zerock.service.ReplyService;
+
+import lombok.AllArgsConstructor;
+
+@Controller
+@RequestMapping("/replies")
+@AllArgsConstructor
+public class ReplyController {
+	private ReplyService service;
+}

@@ -1,0 +1,7 @@
+package org.zerock.domain;
+
+@Getter
+@ToString
+public class PageDTO {
+
+}

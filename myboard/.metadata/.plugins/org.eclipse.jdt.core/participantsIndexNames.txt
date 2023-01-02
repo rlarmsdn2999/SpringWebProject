@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+C:\Users\gusdn\Desktop\myboard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4242238946.index
+\myBoard2\src\main\java
+C:\Users\gusdn\Desktop\myboard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3844648731.index
+\myboard2\src\main\java
+C:\Users\gusdn\Desktop\myboard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\827482205.index
+\myboard\src\main\java
+C:\Users\gusdn\Desktop\myboard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\964006303.index
+\myboard\src\main\java
+C:\Users\gusdn\Desktop\myboard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\593430572.index
+\myBoard2\src\main\java

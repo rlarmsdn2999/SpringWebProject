@@ -1,0 +1,13 @@
+package org.zerock.mapper;
+
+import java.util.List;
+
+import org.zerock.domain.BoardVO;
+
+public interface BoardMapper {
+	public List<BoardVO> getList();
+	public void insertSelectKey(BoardVO board);
+	public BoardVO read(long bno);
+	public Date delete(long bno);
+	public Date update(BoardVO board);
+}

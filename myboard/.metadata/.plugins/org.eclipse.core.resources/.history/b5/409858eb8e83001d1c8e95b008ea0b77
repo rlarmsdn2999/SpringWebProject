@@ -1,0 +1,9 @@
+package org.zerock.mapper;
+
+import java.awt.List;
+
+import org.zerock.domain.BoardVo;
+
+public interface BoardMapper {
+	public List<BoardVo> getList();
+}
